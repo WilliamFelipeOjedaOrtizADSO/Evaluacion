@@ -1,0 +1,594 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --header:90px;
+}
+
+body{
+  background-color: #f2f2f2;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.bg-black{
+  background-color: #000;
+}
+.gris{
+  background-color: #e2e2e2;
+}
+
+.contenedor{
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.header{
+  
+}
+
+.header__menu{
+  height: var(--header);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav{
+
+}
+
+.nav__list{
+  display: flex;  
+  align-items:center;
+  gap: 4rem;
+  list-style: none;
+}
+.nav__item{
+  padding: 24px;
+}
+
+.nav__link{
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.nav__link--secundario{
+  background-color: #000;
+  color: #f2f2f2;
+  padding: 12px 26px;
+}
+
+.nav__boton{
+    background: transparent;
+    border: none;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+#inicio{
+ /* background-image: url("saludo.png"); 
+ background-repeat: no-repeat;
+ background-size: calc(100%);
+ height: calc(100vh - var(--header)); */
+ /* background-color: grey; */
+}
+
+.slider{
+  height: calc(100vh - var(--header));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.slider__contender{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.slider__iformacion{
+  flex: 1;
+  max-width: 620px;
+  margin: 0 20px;
+}
+
+.slider__imagen{
+
+}
+
+.slider__img{
+  max-width: 720px;
+}
+
+.slider__titulo{
+  font-size: 6rem;
+  padding-bottom: 30px;
+}
+
+.titulo__flaco{
+  font-weight: lighter;
+  font-size: 2rem;
+}
+.slider__parrafo{
+    line-height: 1.8;
+    color: #1c1c1c;
+    padding-top: 30px;
+}
+
+.slider__botones{
+  display: flex;
+  gap: 1rem;
+  padding-top: 30px;
+}
+
+.slider__accion{
+  display: flex;
+  justify-content: space-between;
+}
+
+.accion__flecha{
+  background-color: transparent;
+  color: #000;
+  border: none;
+  padding: 12px 26px; 
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+.botonn{
+  background: #812181;
+  padding: 12px 24px;
+  color: #f2f2f2;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.botonn--blanco{
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+/**-------------------
+-----Banner negro ----
+-------------------**/
+
+.llamado{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f1f1f1;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 30px 0;
+}
+
+.llamado__fecha{
+  border: solid 1px #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+/**------------------------------
+---------EXPLORE----------------
+-------------------------------**/
+
+.total{
+  height: 100vh;
+}
+
+.explore{
+  display: grid;
+  grid-template:
+  "uno      dos     tres "  380px 
+  "cuatro   dos     sexto"  380px 
+  "septimo  octavo  noveno" 150px /  auto auto auto;
+}
+.text{
+display: flex;
+  align-items: end;
+  justify-content: center;
+  font-size: 32px;
+  text-transform: capitalize; 
+}
+.uno{
+  grid-area: uno;
+}
+.dos{
+  grid-area: dos;
+}
+.imagen{
+  width: 600px;
+}
+.grafico{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.flecha{
+  background-color: transparent;
+  border: none;
+  font-size: 42px;
+}
+.tres{
+  grid-area: tres; 
+}
+.cuatro{
+  grid-area: cuatro; 
+}
+
+.text_medio{
+  rotate: -90deg;
+  display: flex;
+  justify-content: center ;
+  align-items: start;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.cinco{
+  grid-area: dos;
+}
+
+.sexto{
+  grid-area: sexto;
+  rotate: 90deg; 
+}
+
+.septimo{
+  grid-area: septimo;
+  display: flex;
+  justify-content: start;
+  padding: 0px 30px;
+  font-size: 28px;
+  font-weight: 800;
+  padding-bottom: 40px;
+
+}
+
+.octavo{
+  grid-area: octavo;
+}
+
+.noveno{
+  grid-area: noveno;
+  display: flex;
+  justify-content: end;
+  padding: 0px 30px;
+  font-size: 28px;
+  font-weight: 800;
+  padding-bottom: 40px;
+}
+
+
+/**----------------------------------------------
+-------------------CARD-------------------------
+------------------------------------------------**/
+
+.contenedor_card{
+  display: flex;
+  gap: 6rem;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  justify-content: center;
+}
+.card{
+  display: flex;
+  width: 300px;
+  border: solid 2px #ffffff;
+  padding: 22px;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  border-radius: 50px;
+  box-shadow: 0 0px 10px 0px #d9d9d9;
+  background-color: #ebebeb;
+  
+}
+
+
+.card__title{
+  text-align: center;
+  font-size: 2rem;
+  padding: 4px 0;
+}
+
+.card__text{
+text-align: center;
+}
+
+
+
+.card--border{
+  border: solid 2px var(--color-primary);
+}
+
+
+/**-----------------------------------------------------
+-------------------TRABAJO------------------------------
+-----------------------------------------------------**/
+
+.read_more{
+  background: #812181;
+  padding: 12px 24px;
+  color: #f2f2f2;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.contenedor_work{
+display: grid;
+grid-template: 
+  "texto centrado  caminando" 100px
+  "texto centrado  imagen"    200px
+  "texto centrado  imagen"    300px / 800px 150px 650px ;
+}
+
+.work_text {
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ grid-area: texto;
+ background-color: yellow;
+}
+
+.work_centro {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  grid-area: centrado;
+  background-color: green;
+}
+
+.texto_centro{
+  rotate: 90deg;
+}
+
+.caminando{
+  grid-area: caminando;
+  background-color: rgb(5, 209, 46);
+}
+
+.work_img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   grid-area: imagen;
+     background-color: aqua;
+}
+
+.parrafo_text{
+  display: flex;
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 30px 0;
+}
+
+.lista_text{
+
+
+}
+
+
+
+/**-----------------------------------------------------
+-------------------negrito con sombrero------------------------------
+-----------------------------------------------------**/
+.contenedor2{
+  display: grid;
+  grid-template-columns: 300px 1fr 1fr;
+  margin: auto auto auto;
+  /* background-color: antiquewhite; */
+}
+
+.item1{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.txt{
+  transform: rotate(90deg);
+}
+.item3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo2{
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  font-size: 40px;
+}
+.parrafo2{
+  font-size: 30px;
+}
+
+.texto5{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.img5{
+  display: flex;
+  justify-content: right;
+  min-width: 450px;
+  /* margin-right: auto; */
+}
+
+.a{
+  display: flex;
+  justify-content: top;
+  margin-top: 30px;
+}
+
+/**-----------------------------------------------------
+-------------------MAGENTA------------------------------
+-----------------------------------------------------**/
+
+.contenedor_magenta{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.magenta_uno{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.seccion_magenta{
+  background-color: #c359c3;
+}
+
+.magenta_texto1{
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.magenta_texto2{
+  font-size: 40px;
+  font-weight: lighter;
+  padding-bottom: 30px;
+}
+
+.magenta_botonn{
+  background: black;
+  padding: 12px 24px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.magenta_dos{
+  opacity: 60%;
+}
+
+.magenta_flecha{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  border: none;
+  font-size: 42px;
+  padding: 20px;
+}
+
+.flecha{
+  color: white;
+  border: solid 1px white;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+/**------------------------------------------------
+-----------------TESTIMONIOS-----------------------
+------------------------------------------------**/
+
+/* Estilo para el contenedor principal */
+.cabeza_testimonios {
+  display: flex;
+  justify-content: space-between; 
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.titulo-grande {
+  font-size: 2em; 
+  font-weight: bold; 
+}
+
+.titulo-chiquito {
+  font-weight: normal; 
+}
+
+.become_testimonios {
+  font-weight: bold; 
+}
+
+.grid_testimonios{
+  display: grid;
+  grid-template: 
+  "testiuno testidos"
+  "testitres testicua";
+}
+.testimonio_1 {
+  display: flex;
+  grid-area: testiuno;
+  align-items: center;
+  padding: 30px; /* Ajusta según sea necesario */
+}
+.testimonio_2 {
+  display: flex;
+  grid-area: testidos;
+  align-items: center;
+  padding: 30px; /* Ajusta según sea necesario */
+}
+.testimonio_3 {
+  display: flex;
+  grid-area: testitres;
+  align-items: center;
+  padding: 30px; /* Ajusta según sea necesario */
+}
+.testimonio_4 {
+  display: flex;
+  grid-area: testicua;
+  align-items: center;
+  padding: 30px; /* Ajusta según sea necesario */
+}
+
+.imagen-circular {
+  border-radius: 50%;
+  background-color: #000;
+  width: 400px; /* Tres veces más grande */
+  height: 300px; /* Tres veces más grande */
+  margin-right: 30px; /* Espacio entre la imagen y el contenido */
+}
+
+.contenido_testimonios{
+  flex-grow: 1;
+}
+
+.mini_titulo_testimonios{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.nombre_testimonios {
+  font-weight: bold;
+  margin-right: 5px; /* Espacio entre el nombre y la fecha */
+}
+
+.fecha_testimonios {
+  color: gray;
+}
+
+.comentario_testimonios{
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+
+.estrellas{
+  color: #812181;
+  font-size: 20px;
+}
